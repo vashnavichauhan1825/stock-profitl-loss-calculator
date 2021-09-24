@@ -23,9 +23,7 @@ function clickHandler(e) {
   const percent = (finalAmount * 100) / amountInvested;
 
   if (finalAmount > 0) {
-    result.innerText = `Congratulations!! you made a profit of Rs. ${finalAmount} with a profit percent of ${percent.toFixed(
-      2
-    )} `;
+    result.innerText = `Congratulations!! you made a profit of Rs. ${finalAmount} with a profit percent of ${percent.toFixed(2)} `;
     result.style.color = "green";
   } else if (finalAmount === 0) {
     result.innerText = `Seems like you bought and sold the stock at the same price. Hence, you suffered neither profit nor loss`;
